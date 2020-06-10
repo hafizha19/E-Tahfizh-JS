@@ -11,6 +11,6 @@ DataSource.prototype.searchSurah = function (keyword) {
     if (filteredSurahs.length) {
         this.onSuccess(filteredSurahs);
     } else {
-        this.onFailed(keyword + " is not found");
+        this.onFailed(`${keyword} is not found`);
     }
 };
