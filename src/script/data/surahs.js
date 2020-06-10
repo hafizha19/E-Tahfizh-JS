@@ -65,3 +65,5 @@ const surahs = [
         img_surah: "https://bersamadakwah.net/wp-content/uploads/2018/10/Surat-An-Nas.jpg"
     }
 ]
+
+export default surahs;

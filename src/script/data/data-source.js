@@ -1,16 +1,19 @@
-function DataSource(onSuccess, onFailed) {
-    this.onSuccess = onSuccess;
-    this.onFailed = onFailed;
+import surahs from "./surahs.js";
+
+class DataSource {    
+    static searchSurah(keyword) {
+        return new Promise ((resolve, reject) => {
+            const filteredSurahs = surahs.filter(surah => {
+                return surah.name.toUpperCase().includes(keyword.toUpperCase());
+            });
+
+            if (filteredSurahs.length) {
+                resolve(filteredSurahs);
+            } else {
+                reject(`${keyword} is not found`);
+            }
+        })
+    }
 }
 
-DataSource.prototype.searchSurah = function (keyword) {
-    const filteredSurahs = surahs.filter(function (surah) {
-        return surah.name.toUpperCase().includes(keyword.toUpperCase());
-    });
-
-    if (filteredSurahs.length) {
-        this.onSuccess(filteredSurahs);
-    } else {
-        this.onFailed(`${keyword} is not found`);
-    }
-};
+export default DataSource;

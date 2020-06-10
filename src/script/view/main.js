@@ -1,14 +1,17 @@
-const main = function () {
+import DataSource from "../data/data-source.js";
+
+const main = _ => {
     const searchElement = document.querySelector("#searchElement");
     const buttonSearchElement = document.querySelector("#searchButtonElement");
     const surahListElement = document.querySelector("#surahList");
 
-    const onButtonSearchClicked = function () {
-        const dataSource = new DataSource(renderResult, fallbackResult);
-        dataSource.searchSurah(searchElement.value);
+    const onButtonSearchClicked = _ => {
+        DataSource.searchSurah(searchElement.value)
+            .then(renderResult)
+            .catch(fallbackResult)
     };
 
-    const renderResult= function (results) {
+    const renderResult = results => {
         surahListElement.innerHTML = "";
         results.forEach(function (surah) {
             const {name, ayat, img_surah} = surah;
@@ -28,10 +31,12 @@ const main = function () {
         })
     };
 
-    const fallbackResult = function (message) {
+    const fallbackResult = message => {
         surahListElement.innerHTML = "";
         surahListElement.innerHTML += `<h2 class="placeholder">${message}</h2>`;
     };
 
     buttonSearchElement.addEventListener("click", onButtonSearchClicked);
 }
+
+export default main;
