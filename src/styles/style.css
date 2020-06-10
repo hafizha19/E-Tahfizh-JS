@@ -47,31 +47,7 @@ footer {
    text-align: center;
    color: white;
 }
-
-.jumbotron img {
-   width: 100%;
-   height: auto;
-}
-
-.jumbotron .btn {
-   position: absolute;
-   transform: translate(-50%, -50%);
-   -ms-transform: translate(-50%, -50%);
-   background-color: rgb(25, 37, 90);
-   color: white;
-   font-size: 16px;
-   padding: 12px 24px;
-   border: none;
-   cursor: pointer;
-   border-radius: 5px;
-   text-align: center;
-}
-
-.jumbotron .btn:hover {
-   background-color: black;
- }
-
- .posisi {
+.posisi {
    position: absolute;
    top: 50%;
    left: 35%;

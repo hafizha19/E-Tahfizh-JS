@@ -18,10 +18,6 @@ function putHistory(data) {
        // menambahkan nilai baru pada array yang ditempatkan pada akhir index
        historyData.unshift(data);
 
-    //    if (historyData.length > 7) {
-    //        historyData.pop();
-    //    }
- 
        // mengubah objek JavaScript ke dalam bentuk String
        localStorage.setItem(CACHE_KEY, JSON.stringify(historyData));
    }
@@ -37,7 +33,7 @@ function showHistory() {
 
 function renderHistory() {
     const historyData = showHistory();
-    let progressList = document.querySelector("#progressList");
+    const progressList = document.querySelector("#progressList");
     progressList.innerHTML = "";
     let res = [];
     let numPage;
@@ -45,16 +41,16 @@ function renderHistory() {
 
         numPage = parseInt(history.page);
         res.push(numPage);
-        let sum = res.reduce(function(a,b){
+        const sum = res.reduce(function(a,b){
             return a+b;
         },0);console.log(sum);
-        if (sum>20){
+        if (sum>=20){
             document.querySelector(".result").innerHTML = Math.floor(sum/20)+" Juz "+sum%20+" Halaman";
         } else {
-            document.querySelector(".result").innerHTML = sum;
+            document.querySelector(".result").innerHTML = sum+" Halaman";
         }
 
-        let row = document.createElement('tr');
+        const row = document.createElement('tr');
         row.innerHTML = "<td>" + history.date + "</td>";
         row.innerHTML += "<td>" + history.juz + "</td>";
         row.innerHTML += "<td>" + history.page + "</td>";

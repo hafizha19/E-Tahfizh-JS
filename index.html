@@ -3,40 +3,62 @@
 <head>
     <title>E-Tahfizh</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="src/styles/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <!-- <nav class="circle">
+        <nav class="circle">
             <ul>
                 <li><a href="#start">Mulai Setor</a></li> 
                 <li><a href="#progress">Progress</a></li>
+                <li><a href="#juzamma">Baca Juz Amma</a></li>
             </ul>
-        </nav> -->
-        <div class="jumbotron">
-            <img src="assets/images/penghafal.jpg">
-            <div class="posisi">
-                <h1>E-Tahfizh</h1>
-                <p>Solusi Pendataan Hafalan Qur'an Masa Kini<p>
-                <br/>
-                <button onclick="window.location.href='home.html';" class="btn">Mulai Setor</button>
-                
-            </div>
-        </div>
+        </nav>
 
     </header>
     <main>
         <div id="content">
+            <article id="home" class="article card">
+                <!-- <h2>Penghafal Al-Qur'an</h2> -->
+                <img src="assets/images/penghafal-Quran.jpg" class="featured-image" alt="penghafal-Quran">
+                <p>
+                    <em>
+                        “Sebaik-baik kalian adalah yang mempelajari Al Qur’an dan mengajarkannya” 
+                    </em>
+                    (HR. Bukhari dan Muslim)
+                </p>
+            </article>
+  
             <article id="start" class="card">
                 <center>
                     <h2>Setor Hafalan</h2>
-                    <em>
-                        Pada fitur ini, anda dapat menginputkan data mengenai hafalan yang sudah disetorkan.
-                    </em>
                 </center>
-                <br/> 
+                <br/>
+                <table>
+                    <tr>
+                        <td>
+                            Juz
+                        </td>
+                        <td>
+                            <input type="number" id="juz" class="form_login">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Page
+                        </td>
+                        <td>
+                            <input type="number" id="page" class="form_login">
+                        </td>
+                    </tr>
+                </table>  
+                <center>
+                    <button onclick="setor()" class="tombol">
+                        Input Setoran
+                    </button>
+                </center> 
             </article>
   
             <article class="history card">
@@ -49,13 +71,36 @@
                     
                 </center>
                 <br/>  
+                <table class="table">
+                    <thead>
+                       <tr>
+                           <th>Date</th>
+                           <th>Juz</th>
+                           <th>Page</th>
+                       </tr>
+                   </thead>
+                   <tbody id="progressList"></tbody>
+               </table>
+            </article>
+
+            <article class="card">
+                <center>
+                    <h2>
+                        Juz Amma
+                    </h2>
+                </center>
+                <div id="search-container" class="surah-container">
+                    <input placeholder="Cari Surah Pada Juz Amma" id="searchElement" type="search">
+                    <button id="searchButtonElement" type="submit">Search</button>
+                </div>
+                <div id="surahList"></div>
             </article>
             
         </div>
         <aside>
             <article class="profile card">
                 <header>
-                    <h2>E-Tahfizh <span class="result"></span></h2>
+                    <h2>Hafalan: <span class="result"></span></h2>
                     <!-- <p>Kota Kembang Paris van Java</p> -->
                     <figure>
                         <img src="assets/images/quran.jpeg">
@@ -89,7 +134,7 @@
         </aside>
     </main>
     <footer>
-        <p>Setorkan hafalan secara online dan lihat progress keseharianmu dalam menghafal &#169; 2020, E-tahfidz</p>
+        <p>Setoran hafalan Al-Qur'an secara online dan progressnya &#169; 2020, E-tahfidz</p>
     </footer>
     
     <script src="assets/storage.js"></script>
