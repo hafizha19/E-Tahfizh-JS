@@ -16,10 +16,10 @@ const main = function () {
             const img_surah = surah.img_surah;
 
             const surahElement = document.createElement("div");
-            surahElement.setAttribute("class","surah");
+            surahElement.setAttribute("class", "surah");
 
             surahElement.innerHTML = `
-                <img class="img-surah" source="${img_surah}" alt="Gambar Surah">
+                <img class="img-surah" src="${img_surah}" alt="Gambar Surah">
                 <div class="surah-info">
                     <h2>${name}</h2>
                     <p>${ayat} ayat</p>

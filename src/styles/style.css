@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+@import "surahlist.css";
+@import "searchbar.css";
 
 body {
     font-family: 'Quicksand', sans-serif;
-    /* text-align: center; */
     margin: 0;
     padding: 0;
 }
@@ -16,15 +17,11 @@ main {
     overflow: auto;
  }
 
-h2 {
+h2, h3 {
     color: #00a2c6;
 }
 
-h3 {
-    color: #00a2c6
- }
-
- nav a:hover {
+nav a:hover {
    font-size: 18px;
    font-weight: 400;
    text-decoration: none;
@@ -43,7 +40,6 @@ footer {
 .jumbotron {
    font-size: 20px;
    padding: 0px;
-   /* background-color: #0f6e7c; */
    text-align: center;
    color: white;
 }
@@ -51,7 +47,6 @@ footer {
    position: absolute;
    top: 50%;
    left: 35%;
-   /* right: 30%; */
    transform: translate(-50%, -50%);
  }
 nav li {
@@ -59,8 +54,6 @@ nav li {
     list-style-type: none;
     margin-right: 20px;
     border-right:1px solid #bbb;
-    
-    
 }
 
 header {
@@ -79,9 +72,7 @@ nav a {
    font-size: 18px;
    font-weight: 400;
    text-decoration: none;
-   /* color: white; */
    text-align: center;
-   /* padding: 14px 16px; */
 }
 nav ul {
    list-style: none;
@@ -140,7 +131,7 @@ aside {
     box-shadow: 2px 4px 8px 6px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     padding: 15px;
-    margin-top: 5px;
+    margin-top: 10px;
  }
 
  * {
@@ -203,7 +194,6 @@ label{
 }
 .history {
    width: 100%;
-   margin: 30px auto 0 auto;
    text-align: center;
 }
 

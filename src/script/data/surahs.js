@@ -2,17 +2,17 @@ const surahs = [
     {
         name: "At-Takatsur",
         ayat: "8",
-        img_surah: "https://upload.wikimedia.org/wikipedia/id/thumb/8/89/At-Takathur.png/220px-At-Takathur.png"
+        img_surah: "https://bersamadakwah.net/wp-content/uploads/2020/05/Surat-at-takatsur.jpg"
     },
     {
         name: "Al-Asr",
         ayat: "3",
-        img_surah: "https://upload.wikimedia.org/wikipedia/id/thumb/d/df/Al-%27Asr.png/220px-Al-%27Asr.png" 
+        img_surah: "https://bersamadakwah.net/wp-content/uploads/2020/04/Surat-Al-Ashr.jpg" 
     },
     {
         name: "Al-Humazah",
         ayat: "9",
-        img_surah: "https://upload.wikimedia.org/wikipedia/id/thumb/2/24/Al-Humaza.png/220px-Al-Humaza.png"
+        img_surah: "https://bersamadakwah.net/wp-content/uploads/2019/12/surat-al-humazah.jpg"
     },
     {
         name: "Al-Fil",
@@ -22,32 +22,32 @@ const surahs = [
     {
         name: "Quraisy",
         ayat: "4",
-        img_surah: "https://upload.wikimedia.org/wikipedia/id/thumb/3/3a/Quraish.png/220px-Quraish.png"
+        img_surah: "https://bersamadakwah.net/wp-content/uploads/2019/11/Surat-Quraisy-1.jpg"
     },
     {
         name: "Al-Ma'un",
         ayat: "7",
-        img_surah: "https://upload.wikimedia.org/wikipedia/id/thumb/c/c1/Al-Ma%E2%80%99un.png/220px-Al-Ma%E2%80%99un.png"
+        img_surah: "https://bersamadakwah.net/wp-content/uploads/2019/08/surat-al-maun.jpg"
     },
     {
         name: "Al-Kautsar",
         ayat: "3",
-        img_surah: "https://upload.wikimedia.org/wikipedia/id/thumb/c/c1/Al-Kauthar.png/220px-Al-Kauthar.png"
+        img_surah: "https://bersamadakwah.net/wp-content/uploads/2019/07/surat-al-kautsar.jpg"
     },
     {
         name: "Al-Kafirun",
         ayat: "6",
-        img_surah: "https://upload.wikimedia.org/wikipedia/id/thumb/c/ca/Al-Kafirun.png/220px-Al-Kafirun.png"
+        img_surah: "https://bersamadakwah.net/wp-content/uploads/2019/07/Surat-Al-Kafirun.jpg"
     },
     {
         name: "An-Nasr",
         ayat: "3",
-        img_surah: "https://upload.wikimedia.org/wikipedia/id/thumb/9/96/An-Nasr.png/220px-An-Nasr.png"
+        img_surah: "https://bersamadakwah.net/wp-content/uploads/2019/07/Surat-An-Nasr-Arab-latin.jpg"
     },
     {
         name: "Al-Lahab",
         ayat: "5",
-        img_surah: "https://upload.wikimedia.org/wikipedia/id/thumb/1/16/Al-Masad.png/220px-Al-Masad.png"
+        img_surah: "https://bersamadakwah.net/wp-content/uploads/2019/06/Surat-Al-Lahab.jpg"
     },
     {
         name: "Al-Ikhlas",
@@ -57,11 +57,11 @@ const surahs = [
     {
         name: "Al-Falaq",
         ayat: "5",
-        img_surah: "https://upload.wikimedia.org/wikipedia/id/thumb/6/63/Al-Falaq.png/220px-Al-Falaq.png"
+        img_surah: "https://bersamadakwah.net/wp-content/uploads/2018/10/Surat-Al-Falaq.jpg"
     },
     {
         name: "An-Nas",
         ayat: "6",
-        img_surah: "https://upload.wikimedia.org/wikipedia/id/thumb/b/b8/An-Nas.png/220px-An-Nas.png"
+        img_surah: "https://bersamadakwah.net/wp-content/uploads/2018/10/Surat-An-Nas.jpg"
     }
 ]

@@ -1,0 +1,47 @@
+#surahList {
+    margin-top: 32px;
+    width: 100%;
+    padding: 16px;
+}
+
+#surahList > .placeholder {
+    font-weight: lighter;
+    color: rgba(0,0,0,0.5);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.surah {
+    margin-bottom: 18px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.surah .img-surah {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    object-fit: none;
+    object-position: center;
+}
+
+.surah-info {
+    padding: 24px;
+}
+
+.surah-info > h2 {
+    font-weight: lighter;
+}
+
+.surah-info > p {
+    margin-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 10; /* number of lines to show */
+} 
