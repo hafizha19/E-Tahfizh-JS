@@ -11,9 +11,7 @@ const main = function () {
     const renderResult= function (results) {
         surahListElement.innerHTML = "";
         results.forEach(function (surah) {
-            const name = surah.name;
-            const ayat = surah.ayat;
-            const img_surah = surah.img_surah;
+            const {name, ayat, img_surah} = surah;
 
             const surahElement = document.createElement("div");
             surahElement.setAttribute("class", "surah");
