@@ -1,10 +1,11 @@
-#surahList {
+surah-ist {
+    display: block;
     margin-top: 32px;
     width: 100%;
     padding: 16px;
 }
 
-#surahList > .placeholder {
+surah-list > .placeholder {
     font-weight: lighter;
     color: rgba(0,0,0,0.5);
     -webkit-user-select: none;
@@ -13,14 +14,15 @@
     user-select: none;
 }
 
-.surah {
+surah-item {
+    display: block;
     margin-bottom: 18px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     overflow: hidden;
 }
 
-.surah .img-surah {
+surah-item .img-surah {
     display: block;
     margin: auto;
     max-width: 100%;
