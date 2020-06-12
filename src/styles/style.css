@@ -238,7 +238,7 @@ nav.circle ul li a {
  }
 
 surah-list {
-   display: block;
+   /* display: block; */
    margin-top: 32px;
    width: 100%;
    padding: 16px;
