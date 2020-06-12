@@ -8,7 +8,7 @@ function setor(){
         alert("Masukkan juz dan halamannya.");
         return;
     } 
-
+ 
     const history = {
         date: date,
         juz: juz,

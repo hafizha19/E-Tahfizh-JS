@@ -1,6 +1,6 @@
 // key untuk mengakses dan menyimpan data pada localStorage.
 const CACHE_KEY = "hafalan_history";
-     
+      
 function checkForStorage() {
     return typeof(Storage) !== "undefined";
 }
