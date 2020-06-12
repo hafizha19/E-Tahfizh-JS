@@ -17,8 +17,7 @@ const main = _ => {
     };
 
     const fallbackResult = message => {
-        surahListElement.innerHTML = "";
-        surahListElement.innerHTML += `<h2 class="placeholder">${message}</h2>`;
+        surahListElement.renderError(message);
     };
 
     searchElement.clickEvent = onButtonSearchClicked;
