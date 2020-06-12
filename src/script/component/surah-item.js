@@ -12,14 +12,8 @@ class surahItem extends HTMLElement {
     render() {
         this.shadowDOM.innerHTML = `
         <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
         
         :host {
-            display: block;
             margin-bottom: 18px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             border-radius: 10px;
@@ -29,8 +23,8 @@ class surahItem extends HTMLElement {
         .img-surah {
             display: block;
             margin: auto;
-            max-height: 100%;
-            width: auto;
+            max-width: 100%;
+            height: auto;
         }
         
         .surah-info {
@@ -49,8 +43,7 @@ class surahItem extends HTMLElement {
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 10; /* number of lines to show */
         } 
-        </style>`
-        this.shadowDOM.innerHTML = `
+        </style>
         <img class="img-surah" src="${this._surah.img_surah}" alt="Gambar Surah">
         <div class="surah-info">
             <h2>${this._surah.name}</h2>
