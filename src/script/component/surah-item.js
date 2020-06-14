@@ -44,11 +44,14 @@ class surahItem extends HTMLElement {
             -webkit-line-clamp: 10; /* number of lines to show */
         } 
         </style>
-        <img class="img-surah" src="${this._surah.img_surah}" alt="Gambar Surah">
+        
         <div class="surah-info">
+        <center>
             <h2>${this._surah.name}</h2>
             <p>${this._surah.ayat} ayat</p>
+        </center>    
         </div>
+        <img class="img-surah" src="${this._surah.img_surah}" alt="Gambar Surah">
         `;
     }
 }
